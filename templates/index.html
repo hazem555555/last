@@ -30,11 +30,11 @@
     <h1> Predict the Water Quality Index of the sample</h1>
     <h3 style="padding: 10px;"> Enter the following values to predict the WQI</h3>
     <form action="{{ url_for('predict')}}"method="post" style=" margin: auto;width: 100%;border: 3px solid rgba(0, 0, 0, 0);padding: 10px;">
-      <input class="FirstInput" type="float" min="0" name="enginesize" placeholder="Temperature (T)" required="required" />
-      <input type="float" min="0"name="cylinders" placeholder="Dissolved Oxygen (DO)" required="required" />
-      <input type="float" min="0" name="fuel" placeholder="Power of Hydrogen (PH)" required="required" />
-      <input type="float" min="0" name="enginesize" placeholder="Biochemical Oxygen Demand (BOD)" required="required" />
-      <input type="float" min="0"name="cylinders" placeholder="Nitrated (NO3)" required="required" />
+      <input class="FirstInput" type="float" min="0" name="Temp" placeholder="Temperature (T)" required="required" />
+      <input type="float" min="0"name="DO" placeholder="Dissolved Oxygen (DO)" required="required" />
+      <input type="float" min="0" name="pH"="Power of Hydrogen (PH)" required="required" />
+      <input type="float" min="0" name="BOD" placeholder="Biochemical Oxygen Demand (BOD)" required="required" />
+      <input type="float" min="0"name="NITRATE_N_NITRITE_N" placeholder="Nitrated (NO3)" required="required" />
       <button type="submit" class="btn">Predict</button>
     </form>
      {{ prediction_text }}
